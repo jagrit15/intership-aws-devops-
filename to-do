@@ -1,0 +1,42 @@
+
+3. code at local pushed to github repo. 
+4. cloning of frepo code via https inside the local.*
+5. on server.*
+6. free style project runmning on jenkins local and server based.
+7. overview of git commands.
+
+
+=======================================================================
+
+15/1/24(day 1)
+--------------
+jenkins basics
+started aws practitioner certification
+git and github(basic)
+
+16/1/24(day 2)
+--------------
+git tag
+git push
+git branching
+git merging
+git cheery-pick
+aws certification side by side
+
+17/1/24(day 3)
+-------------
+jenkins pipline creation
+parameterized job
+post actions
+master slave concept
+git practice
+
+18/1/24(day 4)
+-------------
+aws account created
+created EC2 instance(ubuntu)
+step and install jenkins on server
+cloning git repo via http on jenkins(server)
+git webhook 
+
+
