@@ -1,8 +1,4 @@
 
-3. code at local pushed to github repo. 
-4. cloning of frepo code via https inside the local.*
-5. on server.*
-6. free style project runmning on jenkins local and server based.
 7. overview of git commands.
 
 
@@ -38,5 +34,10 @@ created EC2 instance(ubuntu)
 step and install jenkins on server
 cloning git repo via http on jenkins(server)
 git webhook 
+
+19/1/24(day 5)
+-------------
+cloning git repo with jenkins into local
+aws amplify
 
 
