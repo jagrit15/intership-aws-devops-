@@ -19,6 +19,7 @@
 3. Branching and merging
     Git branch [branch name] (create new) 
     Git checkout [branch name](leave the branch)
+    Git checkout . (reset changes in all files)
     Git switch -c [branch name]
     Git merge [branch]
     Git log
@@ -35,6 +36,32 @@
     git push origin "branch name"
 
 6. git cherry-pick [hash value]
+
+7. git rebase [branch-name]
+
+8. git stash
+   git stash pop
+   git stash -m "comment"
+   git stash list 
+   git stash pop --index [no.]
+   git stash clear (clean all stash)
+   git stash drop stash@{0}
+   git stash list  
+
+9. git grep [] (use to search in git repo)  
+
+10. git rev-list --count main
+    (give no. of commits made)
+
+11. git diff [file]
+    git  diff --staged [file](use to check git add befor changes)
+
+12. git reset [file]
+
+13. git revert [hash-value] (reverts commits in github)
+
+14. git fetch then merge = git pull
+    (git fetch get file on local repo not in working dir but when applying merge it reflects in dir too)
     
 
 
@@ -59,3 +86,8 @@
 16. credentials
 17. jenkins install on server(aws)
 18. git intergreation with git(web-hook) 
+19. cloning git repo with jenkins into local
+
+# aws
+1. aws cloud practitioner essentials certificate
+2. ec2

@@ -1,5 +1,4 @@
 
-7. overview of git commands.
 
 
 =======================================================================
@@ -7,7 +6,7 @@
 15/1/24(day 1)
 --------------
 jenkins basics
-started aws practitioner certification
+started aws cloud practitioner essentionals certification
 git and github(basic)
 
 16/1/24(day 2)
@@ -39,5 +38,30 @@ git webhook
 -------------
 cloning git repo with jenkins into local
 aws amplify
+jenkins pipline script
+
+22/1/24(day 6)
+-------------
+ git reset
+ git revert
+ git rev-list
+ git grep
+ git stash
+ git rebase
+ aws certification side by side
+
+23/1/24(day 7)
+-------------
+exploring devops project
+AWS Cloud Practitioner Essentials certification
+ec2 security groups
+
+24/1/24(day 8)
+-------------
+elastic ip address
+ebs(elastic block storage)
+snapshort
+
+
 
 
