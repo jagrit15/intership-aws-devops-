@@ -60,7 +60,32 @@ ec2 security groups
 -------------
 elastic ip address
 ebs(elastic block storage)
-snapshort
+snapshot
+
+25/1/24(day 9)
+-------------
+git branching in-depth
+AMI (amazon machine image)           
+aws load balancer
+added load balancer http in security rules
+classical load balancer
+auto scaling
+
+29/1/24(day 10)
+--------------
+mysql
+
+30/1/24(day 11)
+--------------
+tuple list dictonary in python
+infrasturcter as code
+aws vpc
+s3 
+
+31/1/24(day 12)
+--------------
+s3 srr and crr
+s3 stroge classes
 
 
 

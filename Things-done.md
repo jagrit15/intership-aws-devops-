@@ -62,6 +62,9 @@
 
 14. git fetch then merge = git pull
     (git fetch get file on local repo not in working dir but when applying merge it reflects in dir too)
+
+15. git remote add origin [repo-link](add local project into github)
+    git remote -v(check remote repo)
     
 
 
@@ -91,3 +94,8 @@
 # aws
 1. aws cloud practitioner essentials certificate
 2. ec2
+3. AMI (amazon machine image)
+4. aws load balancer
+5. classical load balancer
+6. added load balancer http in security rules
+7. auto scaling(vertical and horizontal)
