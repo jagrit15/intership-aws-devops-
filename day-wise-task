@@ -81,12 +81,69 @@ tuple list dictonary in python
 infrasturcter as code
 aws vpc
 s3 
+cloud front
 
 31/1/24(day 12)
 --------------
 s3 srr and crr
 s3 stroge classes
+s3 encryption 
+cloudfront
+aws iam
 
+1/2/24(day 13)
+-------------
+aws vpc 
+vpc subnets
+public and private ec2 instance using vpc subnet
+nat gateway
+vpc peering
 
+2/2/24(day 14)
+-------------
+vpc transist gatway
+route 53
+route 53 host zone
+alias
 
+5/2/24(day 15)
+-------------
+dynamo db
+cloud watch 
+simple notif servies(sns)
+cloudwatch alarm
+creating custom metrices in cloudwatch
+event alarm 
+billing alarm
+
+6/2/24(day 16)
+-------------
+triggering ec2 and sns actions on cpu utilization
+documented cloud watch task
+gaurd duty
+secuity hub
+event bridge
+
+7/2/24(day 17)
+-------------
+AWS WAF
+ip's set
+rules creation
+rate limit 
+sql injection 
+
+8/2/24 (day 18)
+--------------
+automation of waf (https://www.tothenew.com/blog/configuring-rate-based-blacklisting-of-ips-using-aws-waf-and-aws-lambda/)
+cloud foundation
+
+9/2/24 (day 19)
+--------------
+creating vpc template in cf
+creating ec2 template in cf
+
+12/2/24 (day 20)
+---------------
+improvment in  ec2 instance in cloud formation
+stdin, stdout and stderr
 

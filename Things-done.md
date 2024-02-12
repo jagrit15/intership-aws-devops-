@@ -99,3 +99,17 @@
 5. classical load balancer
 6. added load balancer http in security rules
 7. auto scaling(vertical and horizontal)
+8. aws s3
+9. srr and crr
+10. S3 storage classes
+11. s3 encryption 
+12. cloudfront
+13. AWS IAM
+14. aws vpc
+14. creating subnets
+14. cidr with ip 
+15. dynamo db 
+16. cloud watch
+17. alarms 
+18. custom metrices
+19. billing alarm
