@@ -146,4 +146,191 @@ creating ec2 template in cf
 ---------------
 improvment in  ec2 instance in cloud formation
 stdin, stdout and stderr
+logs
+type of logs
+
+13/2/24 (day 21)
+---------------
+log rotation 
+soft link and hard link 
+alias in linux
+
+14/2/24 (day 22)
+---------------
+ssh
+ssh-keygen 
+integration of local with github
+
+15/2/24 (day 23)
+---------------
+revision
+
+=================================================================================(1st month complete)
+
+16/2/24 (day 24)
+---------------
+created ec2 with user data and created AMI
+
+19/2/24 (day 25)
+---------------
+installing aws cli
+code build, cloud deploy, cloud commit overview
+
+20/2/24 (day 26)
+---------------
+IAM 
+roles, users, user group, and policies
+created a user with all ec2 services but in specific region
+
+21/2/24 (day 27)
+---------------
+code build project poc
+
+22/2/24 (day 28)
+---------------
+codecommit codebuild codedeploy
+
+23/2/24 (day 29)
+---------------
+project execution
+codepipline
+created a cicd pipeline
+
+26/2/24 (day 30)
+---------------
+vpc
+vpc peering connection
+
+27/2/24 (day 31)
+---------------
+vpc 
+docker basic
+
+28/2/24 (day 32)
+---------------
+EC2 in depth
+
+29/2/24 (day 33)
+---------------
+aws solution architect perp
+
+1/3/2024 (day 34)
+---------------
+EC2 for solution arch
+placement group
+
+4/3/2024 (day 35)
+----------------
+elastic network interface
+name convention of aws services
+
+5/3/2024 (day 36)
+----------------
+instance storage 
+ebs and instance storage
+ec2 hibernation
+
+6/3/24 (day 37)
+---------------
+aws resource explorer 
+tag editor
+AWS EFS
+
+7/3/24 (day 38)
+--------------
+load balancer
+application load balancer
+network load balancer
+gateway load balancer
+sticky session
+cookies
+cross zone based load balancing
+
+8/3/24 (day 39)
+--------------
+ssl/tls certificate
+Server name indication (SNI)
+Connection draining/Deregistration delay
+hands on application load balancer
+Path based routing
+
+11/3/24 (day 40)
+---------------
+task: reduce size of ebs
+commands practiced: 
+ scp -i key.pem backup/1.img ubuntu@3.82.130.240:/home/ubuntu/rec/
+ tar -xzkvf archive.tar.gz -C /path/to/destination
+
+12/3/24 (day 41)
+---------------
+task: transfer already created jenkins job and workspace in new server 
+    created tar.gz file
+    transfered in to s3 
+    copying s3 file in to new server 
+    extracting that file
+    restarting jenkins service
+
+13/3/24 (day 42)
+---------------
+AWS RDS 
+AWS aurora
+
+14/3/24 (day 43)
+---------------
+aws rds
+aws aurura
+rds & aurora security 
+rds & aurora backup
+
+15/3/24 (day 44)
+---------------
+RDS proxy
+elastic cache
+    redis 
+    memcached
+elastic securtiy
+
+18/3/24 (day 45)
+---------------
+route 53
+bought domain name and added it in route 53
+hoated website with custom domain name
+
+
+20/3/24 (day 46)
+---------------
+redirected ec2 instance public ip to  route 53 dns
+==========================================================================================================================
+third month
+
+21/3/24 (day 47)
+---------------
+S3
+
+22/3/24 (day 48)
+---------------
+S3 advance
+
+27/3/24 (day 49)
+---------------
+S3 secuirty
+
+28/3/24 (day 50)
+---------------
+cloud front
+global accelarator
+snowcone, snowball and snow mobile
+
+29/3/24 (day 51)
+---------------
+aws fsx
+
+2/4/24 (day 52)
+--------------
+storage gateway 
+data sync
+transfer family
+
+3/4/24 (day 53)
+--------------
 

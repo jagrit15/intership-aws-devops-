@@ -113,3 +113,12 @@
 17. alarms 
 18. custom metrices
 19. billing alarm
+20. cloud formation 
+21. template creation 
+22. vpc template
+23. securtiy group template
+24. ec2 templete
+
+# linux
+1. sudo poweroff (stop instance)
+2. stdin, stdout, stderr(<, >, 2>)

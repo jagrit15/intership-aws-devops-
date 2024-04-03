@@ -1,0 +1,87 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'AWS CloudFormation Template for AWS WAF IP Blocking'
+
+Parameters:
+  BlockedIPSetId:
+    Type: 'String'
+    Description: 'ID of the AWS WAF IP set where blocked IP addresses will be added'
+  
+  AlarmThreshold:
+    Type: 'Number'
+    Default: 10
+    Description: 'Threshold for triggering the CloudWatch Alarm'
+
+Resources:
+  LambdaFunction:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      FunctionName: 'WAFBlockingLambda'
+      Code:
+        S3Bucket: 'your-s3-bucket'
+        S3Key: 'path/to/your/lambda-code.zip'
+      Runtime: 'python3.8'
+      Timeout: 30
+      Environment:
+        Variables:
+          WAF_IPSetId: !Ref BlockedIPSetId
+
+  LambdaExecutionRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: 'Allow'
+            Principal:
+              Service: 'lambda.amazonaws.com'
+            Action: 'sts:AssumeRole'
+      Policies:
+        - PolicyName: 'WAFBlockingLambdaPolicy'
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: 'Allow'
+                Action:
+                  - 'wafv2:UpdateIPSet'
+                Resource: !Sub 'arn:aws:wafv2:${AWS::Region}:${AWS::AccountId}:regional/ipset/${BlockedIPSetId}'
+  
+  CloudWatchAlarm:
+    Type: 'AWS::CloudWatch::Alarm'
+    Properties:
+      AlarmName: 'WAFBlockingAlarm'
+      ComparisonOperator: 'GreaterThanOrEqualToThreshold'
+      EvaluationPeriods: 1
+      MetricName: 'BlockedIPCount'
+      Namespace: 'AWS/WAFV2'
+      Period: 300 # 5 minutes
+      Threshold: !Ref AlarmThreshold
+      ActionsEnabled: true
+      AlarmActions:
+        - !GetAtt LambdaFunction.Arn
+      Dimensions:
+        - Name: 'Rule'
+          Value: 'AWSManagedRulesCommonRuleSet'
+        - Name: 'WebACL'
+          Value: 'your-web-acl-id'  # Replace with your WebACL ID
+        - Name: 'Resource'
+          Value: 'your-resource-arn'  # Replace with your resource ARN
+
+  BlockedIPCountMetric:
+    Type: 'AWS::CloudWatch::Metric'
+    Properties:
+      MetricName: 'BlockedIPCount'
+      Namespace: 'AWS/WAFV2'
+      Dimensions:
+        - Name: 'Rule'
+          Value: 'AWSManagedRulesCommonRuleSet'
+        - Name: 'WebACL'
+          Value: 'your-web-acl-id'  # Replace with your WebACL ID
+        - Name: 'Resource'
+          Value: 'your-resource-arn'  # Replace with your resource ARN
+
+Outputs:
+  LambdaFunctionArn:
+    Description: 'ARN of the Lambda function'
+    Value: !GetAtt LambdaFunction.Arn
