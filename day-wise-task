@@ -1,6 +1,4 @@
 
-
-
 =======================================================================
 
 15/1/24(day 1)
@@ -333,4 +331,80 @@ transfer family
 
 3/4/24 (day 53)
 --------------
+kuberneties
 
+4/4/24 (day 54)
+--------------
+k8s
+
+8/4/24 (day 55)
+--------------
+SQS
+SNS
+
+9/4/24 (day 56)
+--------------
+kinesis
+AWS ECS
+amazon MQ
+
+10/4/24 (day 57)
+---------------
+aws serverless 
+lambda
+automation to prevent wrong volume type selection via cloud watch and lambda fuction 
+
+=========================================================================================================================
+
+15/4/24 (day 58)
+---------------
+serverless solution arch discussion
+makeing private instance access internet using application load balancer
+databases
+
+16/4/24 (day 59)
+---------------
+aws data analitics services 
+aws ML services
+
+17/4/24 (day 60)
+---------------
+cloud front distribution from s3
+aws tag editor
+
+18/4/24 (day 61)
+---------------
+cloud monitoring 
+aws cloud watch, cloud trail and aws config
+
+22/4/24 (day 62)
+--------------
+aws security
+
+23/4/24 (day 63)
+---------------
+guard duty
+aws inspector
+
+24/4/24 (day 64)
+---------------
+vpc
+
+25/4/24 (day 65)
+---------------
+automation of pipeline
+
+26/4/24 (day 66)
+---------------
+automation of pipeline
+stepfuction
+event bridge
+lambda
+
+29/4/24 (day 67)
+---------------
+vpc
+
+6/5/24 (day 68)
+--------------
+solution arch course
